@@ -1,0 +1,19 @@
+{
+  "name": "saas-business-manager-2026",
+  "private": true,
+  "description": "Enterprise SaaS Management System",
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "services/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspaces --if-present",
+    "build": "npm run build --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
