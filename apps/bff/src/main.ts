@@ -25,7 +25,9 @@ async function bootstrap() {
   SwaggerModule.setup('docs', app, document);
 
   await app.listen(3001, '0.0.0.0');
-  console.log(`🚀 API rodando em: http://localhost:3001`);
+  console.log(`🚀 Front rodando em: http://localhost:3000/`);
+  console.log(`🚀 BFF rodando em: http://localhost:3001`);
   console.log(`📑 Documentação: http://localhost:3001/docs`);
+
 }
 bootstrap();
